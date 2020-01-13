@@ -1,0 +1,9 @@
+.resultsDiv
+{
+    margin-top: 30px;
+    height: 250px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
