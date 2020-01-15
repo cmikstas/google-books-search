@@ -1,27 +1,23 @@
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
-import Jumbotron from "./components/Jumbotron"
-import BookSearch from "./components/BookSearch"
-import ResultsDiv from "./components/ResultsDiv"
+import Search from "./pages/Search";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 
-class App extends Component
+function App()
 {
-  render()
-  {
-    return (
-      <div className="htmlBody">
-        <Navbar></Navbar>
-        <div className="jumbotron jumbo text-center">
-          <Jumbotron></Jumbotron>
-        </div>
-        <div className="container-fluid containerDiv">
-          <BookSearch></BookSearch>
-          <ResultsDiv></ResultsDiv>
-        </div>
+  return (
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Search} />
+
+        </Switch>
       </div>
-    )
-  }
+    </Router>
+  );
+
 }
 
 

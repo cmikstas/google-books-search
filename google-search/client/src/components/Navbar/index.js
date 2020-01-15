@@ -5,9 +5,9 @@ const Navbar = () =>
 {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-      <a href="#" className="navbar-brand text text-light">
+      <div /**href="#"**/ className="navbar-brand text text-light">
         <h3>Chris Mikstas</h3>
-      </a>
+      </div>
       <button className="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
