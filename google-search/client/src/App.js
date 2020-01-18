@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Search from "./pages/Search";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -14,10 +14,9 @@ function App()
           <Route exact path="/" component={Search} />
 
         </Switch>
-      </div>
+      </div>  
     </Router>
   );
-
 }
 
 
