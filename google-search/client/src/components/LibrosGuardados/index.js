@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const TarjetaDeLibro = (props) =>
+const LibrosGuardados = (props) =>
 {
     return (
         <div className="row cardClass p-2 my-2">
@@ -13,10 +13,10 @@ const TarjetaDeLibro = (props) =>
                 <p><strong>Authors:</strong> {props.authors}</p>
                 <p><strong>Details:</strong> {props.description}</p>
                 <p><strong>Link: </strong> <a href={props.infoLink}>{props.infoLink}</a></p>
-                <button type="button" className="btn btn-warning" index={props.id} onClick={() => props.save(props.id)}><strong>Save Book</strong></button>
+                <button type="button" className="btn btn-warning" index={props.id} onClick={() => props.delete(props.id)}><strong>Delete Book</strong></button>
             </div>
         </div>
     );
 }
 
-export default TarjetaDeLibro;
+export default LibrosGuardados;

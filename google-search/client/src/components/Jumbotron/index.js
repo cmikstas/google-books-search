@@ -9,7 +9,7 @@ const Jumbotron = (props) =>
         <br></br>
         <h2>Search For and Save Books of Interest</h2>
         <br></br>
-        <button type="button" className="btn btn-dark">Saved Articles</button>
+        <button type="button" className="btn btn-dark" onClick={() => props.savedBooks()}>Saved Books</button>
       </div>
     );
 }
